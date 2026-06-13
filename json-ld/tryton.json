@@ -1,0 +1,47 @@
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "@id": "https://www.tryton.org/",
+  "name": "Tryton",
+  "description": "Tryton is an open-source three-tier ERP (Enterprise Resource Planning) platform built on Python and PostgreSQL, designed for companies of any size. It provides REST APIs for managing a comprehensive suite of business modules including financial accounting, inventory and stock management, purchasing, sales, production, and project management.",
+  "applicationCategory": "BusinessApplication",
+  "applicationSubCategory": "ERP",
+  "operatingSystem": "Linux, macOS, Windows",
+  "softwareVersion": "8.0",
+  "license": "https://www.gnu.org/licenses/gpl-3.0.html",
+  "programmingLanguage": "Python",
+  "url": "https://www.tryton.org/",
+  "downloadUrl": "https://www.tryton.org/download",
+  "softwareHelp": {
+    "@type": "CreativeWork",
+    "url": "https://docs.tryton.org/latest/"
+  },
+  "sameAs": [
+    "https://github.com/tryton",
+    "https://x.com/TrytonSoftware",
+    "https://www.linkedin.com/groups/1313967"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "description": "Free and open-source under GPL v3"
+  },
+  "maintainer": {
+    "@type": "Organization",
+    "name": "Tryton Foundation",
+    "url": "https://www.tryton.org/"
+  },
+  "featureList": [
+    "Financial Accounting",
+    "Inventory Management",
+    "Stock Management",
+    "Sales Management",
+    "Purchase Management",
+    "Production Management",
+    "Project Management",
+    "REST API",
+    "Multi-company Support",
+    "Multi-currency Support"
+  ]
+}

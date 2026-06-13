@@ -1,0 +1,59 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebAPI",
+  "@id": "https://docs.tryton.org/latest/client-rest/index.html",
+  "name": "Tryton REST API",
+  "description": "RESTful API for Tryton ERP providing access to all business modules including financial accounting, stock/inventory, sales, purchasing, and production. Supports standard HTTP methods with JSON payloads, user application authentication, pagination via Range headers, domain filtering via query parameters, and context-based localization.",
+  "documentation": "https://docs.tryton.org/latest/client-rest/index.html",
+  "termsOfService": "https://www.tryton.org/",
+  "provider": {
+    "@type": "Organization",
+    "name": "Tryton Foundation",
+    "url": "https://www.tryton.org/"
+  },
+  "license": "https://www.gnu.org/licenses/gpl-3.0.html",
+  "version": "8.0",
+  "url": "https://docs.tryton.org/latest/client-rest/index.html",
+  "applicationCategory": "ERP",
+  "featureList": [
+    "CRUD operations (GET, POST, PUT, DELETE)",
+    "JSON request and response payloads",
+    "User application authentication",
+    "Context headers for localization",
+    "Pagination via Range headers",
+    "Domain filtering via query parameters",
+    "Financial Accounting module access",
+    "Inventory and Stock module access",
+    "Sales module access",
+    "Purchase module access",
+    "Production module access",
+    "Project Management module access"
+  ],
+  "potentialAction": [
+    {
+      "@type": "SearchAction",
+      "name": "List Records",
+      "description": "Retrieve a list of records from any Tryton model with optional domain filtering and pagination"
+    },
+    {
+      "@type": "ReadAction",
+      "name": "Get Record",
+      "description": "Retrieve a single record by ID from any Tryton model"
+    },
+    {
+      "@type": "WriteAction",
+      "name": "Create Record",
+      "description": "Create a new record in any Tryton model via POST with JSON payload"
+    },
+    {
+      "@type": "UpdateAction",
+      "name": "Update Record",
+      "description": "Update an existing record in any Tryton model via PUT with JSON payload"
+    },
+    {
+      "@type": "DeleteAction",
+      "name": "Delete Record",
+      "description": "Delete an existing record from any Tryton model via DELETE"
+    }
+  ]
+}
