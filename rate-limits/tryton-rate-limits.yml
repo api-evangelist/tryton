@@ -1,0 +1,62 @@
+name: Tryton Rate Limits
+description: >-
+  Tryton is a self-hosted open-source ERP platform. Rate limiting is not enforced
+  by the Tryton Foundation at the software level; any rate limiting is the
+  responsibility of the deploying organization and is typically implemented at
+  the infrastructure layer (e.g., web server, reverse proxy, or API gateway).
+  No documented rate limits exist in the official Tryton codebase or documentation.
+url: https://docs.tryton.org/latest/
+created: '2026-06-13'
+modified: '2026-06-13'
+rateLimits:
+  - scope: REST API
+    limit: Not enforced by default
+    description: >-
+      Tryton does not impose built-in rate limits on its REST API. The REST API
+      (available at /api/rest/<database>/<model.name>) relies on user application
+      authentication for access control. Operators deploying Tryton can implement
+      rate limiting via reverse proxies such as Nginx or HAProxy, or cloud API
+      gateways.
+    configurable: true
+    documentation: https://discuss.tryton.org/t/rest-api-for-user-application/6157
+
+  - scope: XML-RPC API
+    limit: Not enforced by default
+    description: >-
+      The XML-RPC interface (legacy protocol, pre-dating the REST API) also has
+      no built-in rate limiting. Infrastructure-level controls apply.
+    configurable: true
+    documentation: https://docs.tryton.org/latest/server/ref/index.html
+
+pagination:
+  description: >-
+    The REST API uses the HTTP Range header for pagination. Responses include
+    a Content-Range header indicating the total count and current slice.
+  parameters:
+    - name: s
+      description: Result limit (page size)
+      type: integer
+    - name: p
+      description: Offset for pagination
+      type: integer
+    - name: Range
+      description: HTTP Range header for paginated requests
+      location: header
+
+filtering:
+  description: >-
+    Domain filtering is supported via the 'd' query parameter, which accepts
+    a base64-encoded JSON domain specification. Ordering uses the 'o' parameter.
+  parameters:
+    - name: d
+      description: JSON domain filter (base64 encoded)
+      type: string
+    - name: o
+      description: JSON order specification
+      type: string
+
+notes: >-
+  Organizations operating Tryton in production environments should implement
+  appropriate rate limiting, throttling, and DDoS protection at the network
+  and infrastructure layer. The Tryton project does not provide a hosted SaaS
+  API, so all rate limit decisions belong to the deploying organization.

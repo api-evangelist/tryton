@@ -1,0 +1,88 @@
+name: Tryton FinOps
+description: >-
+  Financial operations considerations for organizations adopting Tryton ERP.
+  Since Tryton is 100% open-source under GPL v3, there are no software licensing
+  costs. Total cost of ownership (TCO) is driven by infrastructure, implementation,
+  and ongoing operational costs rather than per-seat or API-call pricing.
+url: https://www.tryton.org/
+created: '2026-06-13'
+modified: '2026-06-13'
+licensingModel: Open Source (GPL v3)
+softwareCost: 0
+apiCallCost: 0
+
+costDrivers:
+  - category: Infrastructure
+    description: >-
+      Self-hosted deployments require servers (on-premise or cloud VMs) running
+      Python, PostgreSQL, and a web server. Cloud deployments on AWS, GCP, or
+      Azure incur standard IaaS costs. Docker images are provided for containerized
+      deployments.
+    estimatedRange: varies
+    notes: Tryton 8.0 LTS Docker image available via Docker Hub
+
+  - category: Implementation and Customization
+    description: >-
+      Initial implementation, data migration, and module customization typically
+      require certified Tryton service providers or in-house developers. One-time
+      project costs vary based on scope and provider rates.
+    estimatedRange: varies
+    url: https://www.tryton.org/service-providers
+
+  - category: Support Contracts
+    description: >-
+      Commercial support contracts from third-party service providers. Pricing
+      is negotiated directly with providers. Community support via the Tryton
+      Discussion Forum is free.
+    estimatedRange: varies
+    url: https://discuss.tryton.org/
+
+  - category: Training
+    description: >-
+      End-user and developer training may be provided by Tryton service providers.
+      Free documentation, tutorials, and a YouTube channel are available from
+      the community.
+    estimatedRange: varies
+    url: https://www.youtube.com/c/TrytonSoftware
+
+optimizationStrategies:
+  - strategy: Use LTS releases
+    description: >-
+      Tryton 8.0 is the current LTS (Long Term Support) release, providing
+      a stable foundation with extended bug-fix support, reducing upgrade costs.
+    url: https://discuss.tryton.org/c/news/25
+
+  - strategy: Community support first
+    description: >-
+      Leverage the free Tryton Discussion Forum for troubleshooting and
+      feature questions before engaging paid support contracts.
+    url: https://discuss.tryton.org/
+
+  - strategy: Containerized deployment
+    description: >-
+      Use the official Tryton Docker image to reduce infrastructure setup time
+      and simplify scaling and environment consistency.
+
+  - strategy: Module selection
+    description: >-
+      Deploy only required ERP modules (accounting, stock, sales, purchase,
+      production, projects) to minimize infrastructure resource consumption
+      and maintenance overhead.
+    url: https://docs.tryton.org/latest/
+
+apiUsageCosts:
+  description: >-
+    There are no per-call, per-request, or metered API costs associated with
+    the Tryton REST or XML-RPC APIs. All API usage costs are absorbed into
+    infrastructure and operational expenses of the self-hosted deployment.
+  model: Flat (Infrastructure-based)
+  perCallCost: 0
+
+notes: >-
+  FinOps for Tryton is primarily about right-sizing infrastructure, selecting
+  appropriate service provider contracts, and planning module rollout to control
+  implementation complexity and cost. As open-source software with no vendor
+  lock-in, organizations retain full control over their cost structure.
+  The Tryton Foundation accepts donations to support ongoing development.
+  Reference the service providers directory for commercial options:
+  https://www.tryton.org/service-providers

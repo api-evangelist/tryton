@@ -1,0 +1,54 @@
+name: Tryton Plans and Pricing
+description: >-
+  Tryton is 100% open-source software licensed under the GPL v3. There are no
+  per-user licensing fees, subscription tiers, or official commercial pricing
+  from the Tryton Foundation. Organizations use the software for free and may
+  engage third-party service providers for implementation, customization, hosting,
+  and support. The Tryton Foundation maintains the codebase and releases.
+url: https://www.tryton.org/
+created: '2026-06-13'
+modified: '2026-06-13'
+plans:
+  - name: Open Source (Self-Hosted)
+    description: >-
+      Full Tryton ERP platform available at no cost under GPL v3 license.
+      Includes all modules for accounting, inventory, sales, purchasing,
+      production, and project management. Community support via the Tryton
+      Discussion Forum. Suitable for organizations with in-house technical
+      resources.
+    url: https://www.tryton.org/
+    price: 0
+    pricingModel: Free
+    license: GPL-3.0
+    features:
+      - All core ERP modules (accounting, stock, sales, purchase, production)
+      - REST API access
+      - XML-RPC API access
+      - User application authentication
+      - PostgreSQL database backend
+      - Python-based extensibility
+      - Community forum support
+      - Docker image available
+      - 221+ repositories on GitHub
+
+  - name: Managed / Commercial Support (Third-Party)
+    description: >-
+      Various certified Tryton service providers offer commercial hosting,
+      implementation, customization, training, and support contracts. Pricing
+      is determined by individual service providers, not the Tryton Foundation.
+      A directory of service providers is maintained on the Tryton website.
+    url: https://www.tryton.org/service-providers
+    price: varies
+    pricingModel: Commercial (Third-Party)
+    features:
+      - Professional implementation and customization
+      - Managed hosting
+      - SLA-backed support
+      - Training and onboarding
+      - Module development
+
+notes: >-
+  As of June 2026, Tryton 8.0 LTS is the latest major release. There is no
+  official SaaS offering or tiered commercial API plan from the Tryton
+  Foundation. Organizations needing enterprise support should consult the
+  certified service provider directory at https://www.tryton.org/service-providers.

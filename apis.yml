@@ -1,0 +1,77 @@
+aid: tryton
+name: Tryton
+description: >-
+  Tryton is an open-source three-tier ERP (Enterprise Resource Planning) platform
+  built on Python and PostgreSQL, designed for companies of any size. It provides
+  REST APIs for managing a comprehensive suite of business modules including
+  financial accounting, inventory and stock management, purchasing, sales, production,
+  and project management. The REST API supports standard CRUD operations (GET, POST,
+  PUT, DELETE) with JSON responses, user application authentication, context headers
+  for localization, pagination via Range headers, and domain filtering via query
+  parameters. Tryton is licensed under GPL v3 and free to use.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/tryton/refs/heads/main/apis.yml
+created: '2026-06-13'
+modified: '2026-06-13'
+specificationVersion: '0.19'
+tags:
+  - ERP
+  - Enterprise Resource Planning
+  - Accounting
+  - Inventory
+  - Sales
+  - Purchasing
+  - Production
+  - Project Management
+  - Open Source
+apis:
+  - aid: tryton:tryton-rest-api
+    name: Tryton REST API
+    description: >-
+      RESTful API for Tryton ERP providing access to all business modules including
+      financial accounting, stock/inventory, sales, purchasing, and production.
+      Supports standard HTTP methods with JSON payloads, user application
+      authentication, pagination, domain filtering, and context-based localization.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://discuss.tryton.org/t/rest-api-for-user-application/6157
+    baseURL: https://tryton.example.com/api/rest
+    tags:
+      - ERP
+      - REST API
+      - Accounting
+      - Inventory
+      - Sales
+    properties:
+      - type: Documentation
+        url: https://docs.tryton.org/latest/
+      - type: OpenAPI
+        url: https://docs.tryton.org/latest/
+    contact:
+      - FN: Tryton Foundation
+        url: https://www.tryton.org/
+        email: ''
+common:
+  - type: Website
+    url: https://www.tryton.org/
+  - type: Documentation
+    url: https://docs.tryton.org/latest/
+  - type: GitHubOrg
+    url: https://github.com/tryton
+  - type: LinkedIn
+    url: https://www.linkedin.com/groups/1313967
+  - type: Blog
+    url: https://discuss.tryton.org/c/news/25
+  - type: Pricing
+    url: https://www.tryton.org/
+  - type: X
+    url: https://x.com/TrytonSoftware
+  - type: Plans
+    url: plans/tryton-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/tryton-rate-limits.yml
+  - type: FinOps
+    url: finops/tryton-finops.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
