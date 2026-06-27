@@ -1,113 +1,13 @@
 {
-  "aid": "tryton",
-  "url": "https://discuss.tryton.org/c/news/25.rss",
-  "retrieved": "2026-06-13",
-  "blogs": [
-    {
-      "title": "Tryton News June 2026",
-      "url": "https://discuss.tryton.org/t/tryton-news-june-2026/9246",
-      "published": "2026-06-02",
-      "tags": [
-        "news",
-        "release",
-        "accounting",
-        "stock",
-        "ui"
-      ]
-    },
-    {
-      "title": "Tryton News May 2026",
-      "url": "https://discuss.tryton.org/t/tryton-news-may-2026/9214",
-      "published": "2026-05-01",
-      "tags": [
-        "news",
-        "rest-api",
-        "release",
-        "documentation"
-      ]
-    },
-    {
-      "title": "Tryton Release 8.0",
-      "url": "https://discuss.tryton.org/t/tryton-release-8-0/9208",
-      "published": "2026-04-21",
-      "tags": [
-        "release",
-        "lts",
-        "major-release"
-      ]
-    },
-    {
-      "title": "Tryton News April 2026",
-      "url": "https://discuss.tryton.org/t/tryton-news-april-2026/9179",
-      "published": "2026-04-01",
-      "tags": [
-        "news",
-        "release"
-      ]
-    },
-    {
-      "title": "Release 0.8.0 of mt940",
-      "url": "https://discuss.tryton.org/t/release-0-8-0-of-mt940/9162",
-      "published": "2026-03-23",
-      "tags": [
-        "release",
-        "library",
-        "finance"
-      ]
-    },
-    {
-      "title": "Release 0.4.0 of febelfin-coda",
-      "url": "https://discuss.tryton.org/t/release-0-4-0-of-febelfin-coda/9161",
-      "published": "2026-03-23",
-      "tags": [
-        "release",
-        "library",
-        "finance"
-      ]
-    },
-    {
-      "title": "Release 0.2.0 of aeb43",
-      "url": "https://discuss.tryton.org/t/release-0-2-0-of-aeb43/9160",
-      "published": "2026-03-23",
-      "tags": [
-        "release",
-        "library",
-        "finance"
-      ]
-    },
-    {
-      "title": "Release 0.12.0 of Relatorio",
-      "url": "https://discuss.tryton.org/t/release-0-12-0-of-relatorio/9159",
-      "published": "2026-03-23",
-      "tags": [
-        "release",
-        "library",
-        "reporting"
-      ]
-    },
-    {
-      "title": "Release 1.7.0 of python-sql",
-      "url": "https://discuss.tryton.org/t/release-1-7-0-of-python-sql/9157",
-      "published": "2026-03-22",
-      "tags": [
-        "release",
-        "library",
-        "sql"
-      ]
-    },
-    {
-      "title": "Release 0.1.0 of hatch-tryton",
-      "url": "https://discuss.tryton.org/t/release-0-1-0-of-hatch-tryton/9154",
-      "published": "2026-03-19",
-      "tags": [
-        "release",
-        "library",
-        "developer-tools"
-      ]
-    }
-  ],
   "repo": "tryton",
   "feeds": [
+    {
+      "source": "https://discuss.tryton.org/c/news/25.rss",
+      "feed_url": "https://discuss.tryton.org/c/news/25.rss",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
+    },
     {
       "source": "https://www.linkedin.com/groups/1313967",
       "feed_url": "https://www.linkedin.com/groups/1313967",
@@ -116,6 +16,6 @@
       "method": "none"
     }
   ],
-  "post_count": 0,
-  "fetched": "2026-06-14T20:42:17Z"
+  "fetched": "2026-06-27T12:03:07Z",
+  "post_count": 0
 }
