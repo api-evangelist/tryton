@@ -52,6 +52,8 @@ apis:
         url: https://www.tryton.org/
         email: ''
 common:
+  - type: DomainSecurity
+    url: security/tryton-domain-security.yml
   - type: Website
     url: https://www.tryton.org/
   - type: Documentation
