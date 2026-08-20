@@ -36,6 +36,16 @@ tags:
   - Purchasing
   - Production
   - Project Management
+  - Open-Source
+tags_raw:
+  - ERP
+  - Enterprise Resource Planning
+  - Accounting
+  - Inventory
+  - Sales
+  - Purchasing
+  - Production
+  - Project Management
   - Open Source
 apis:
   - aid: tryton:tryton-rest-api
