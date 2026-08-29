@@ -10,6 +10,17 @@ description: >-
   for localization, pagination via Range headers, and domain filtering via query
   parameters. Tryton is licensed under GPL v3 and free to use.
 type: Index
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: freemium
   onboarding: unknown
