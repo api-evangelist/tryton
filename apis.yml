@@ -46,7 +46,7 @@ tags:
   - Purchasing
   - Production
   - Project Management
-  - Open-Source
+  - Open Source
 tags_raw:
   - ERP
   - Enterprise Resource Planning
@@ -57,6 +57,7 @@ tags_raw:
   - Production
   - Project Management
   - Open Source
+  - Open-Source
 apis:
   - aid: tryton:tryton-rest-api
     name: Tryton REST API
