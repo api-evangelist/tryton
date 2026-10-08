@@ -57,3 +57,22 @@ notes: >-
   official SaaS offering or tiered commercial API plan from the Tryton
   Foundation. Organizations needing enterprise support should consult the
   certified service provider directory at https://www.tryton.org/service-providers.
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - free
+  units: []
+  plans:
+  - name: Open Source (Self-Hosted)
+    access: other
+    model: free
+    model_how: derived
+    units: []
+    periods: []
+  - name: Managed / Commercial Support (Third-Party)
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
