@@ -5,7 +5,7 @@
       "source": "https://discuss.tryton.org/c/news/25",
       "feed_url": "https://discuss.tryton.org/posts.rss",
       "title": "",
-      "saved": 11,
+      "saved": 0,
       "method": "discovered"
     },
     {
@@ -16,6 +16,13 @@
       "method": "none"
     },
     {
+      "source": "https://discuss.tryton.org/posts.rss",
+      "feed_url": "https://discuss.tryton.org/posts.rss",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
+    },
+    {
       "source": "https://discuss.tryton.org/c/news/25.rss",
       "feed_url": "https://discuss.tryton.org/c/news/25.rss",
       "title": "",
@@ -23,8 +30,8 @@
       "method": "feed"
     }
   ],
-  "fetched": "2026-10-10T13:15:00Z",
-  "post_count": 68,
+  "fetched": "2026-10-17T14:53:57Z",
+  "post_count": 72,
   "feed_nature": "support-community",
   "feed_nature_basis": "discourse_topic",
   "feed_nature_note": "Whether these posts are the vendor publishing or its support community, decided on the URL path grammar of the saved posts -- not the hostname, which carries both on Khoros, and not author diversity, which flags large vendor blogs as forums. 'undetermined' means undetermined.",
