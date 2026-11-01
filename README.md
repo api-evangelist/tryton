@@ -64,62 +64,104 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Tryton is an open-source three-tier ERP (Enterprise Resource Planning) platform built on Python and PostgreSQL, designed for companies of any size. It is 100% open-source under the GPL v3 license with no per-user licensing fees.
+Tryton is an open-source three-tier ERP (Enterprise Resource Planning) platform built on Python and PostgreSQL, designed for companies of any size. It provides REST APIs for managing a comprehensive suite of business modules including financial accounting, inventory and stock management, purchasing, sales, production, and project management. The REST API supports standard CRUD operations (GET, POST, PUT, DELETE) with JSON responses, user application authentication, context headers for localization, pagination via Range headers, and domain filtering via query parameters. Tryton is licensed under GPL v3 and free to use.
 
-## Overview
+**Areas:** ERP · Accounting · Inventory · Sales · Purchasing · Production · Project Management · Open Source
 
-Tryton provides a comprehensive suite of business modules accessible via REST and XML-RPC APIs:
+## Tryton on APIs.io
 
-- Financial Accounting
-- Stock and Inventory Management
-- Sales Management
-- Purchase Management
-- Production / Manufacturing
-- Project Management
+Everything profiled for Tryton is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/tryton/](https://apis.io/providers/tryton/)** — or go straight to one of the APIs or properties below.
 
-## REST API
+### APIs (1)
 
-The Tryton REST API follows standard HTTP conventions:
+- [Tryton REST API](https://apis.io/apis/tryton/tryton-rest-api/) — RESTful API for Tryton ERP providing access to all business modules including financial accounting, stock/inventory, sales, purchasing, and production.…
 
-- `GET /api/rest/<database>/<model.name>` — list records
-- `POST /api/rest/<database>/<model.name>` — create a record
-- `GET /api/rest/<database>/<model.name>/<id>` — retrieve a record
-- `PUT /api/rest/<database>/<model.name>/<id>` — update a record
-- `DELETE /api/rest/<database>/<model.name>/<id>` — delete a record
-- `POST /api/rest/<database>/<model.name>/<id>/<button>` — trigger actions
+### Published properties
 
-### Authentication
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-Uses user application authentication. A dedicated application user is created per consumer.
+#### Security (1)
 
-### Headers
+Authentication, trust centre, and vulnerability disclosure.
 
-- `X-Tryton-Context` — JSON context dictionary for localization and session settings
-- `X-Tryton-Usage` — comma-separated list of usage hints to customize response fields
-- `Accept-Language` — standard header for language preference
+- [Tryton Domain Security](https://apis.io/security/tryton/tryton-domain-security/)
 
-### Pagination
+#### Plans and pricing (1)
 
-Supports HTTP `Range` header for paginated requests with `Content-Range` responses. Also supports `s` (limit) and `p` (offset) query parameters.
+Published plans, tiers and prices.
 
-### Filtering
+- [Tryton Plans Pricing](https://apis.io/plans/tryton/tryton-plans-pricing/)
 
-Domain filtering via `d` query parameter (base64-encoded JSON domain). Ordering via `o` parameter.
+#### Rate limits (1)
 
-## Resources
+Published request limits.
 
-- **Website**: https://www.tryton.org/
-- **Documentation**: https://docs.tryton.org/latest/
-- **GitHub**: https://github.com/tryton
-- **Discussion Forum / News**: https://discuss.tryton.org/c/news/25
-- **Service Providers**: https://www.tryton.org/service-providers
-- **LinkedIn Group**: https://www.linkedin.com/groups/1313967
-- **X (Twitter)**: https://x.com/TrytonSoftware
+- [Tryton Rate Limits](https://apis.io/rate-limits/tryton/tryton-rate-limits/)
 
-## Latest Release
+#### FinOps (1)
 
-Tryton 8.0 LTS (May 2026) is the current Long Term Support release.
+What the API costs to run, by operation.
 
-## APIs.json
+- [Tryton Finops](https://apis.io/finops/tryton/tryton-finops/)
 
-This repository contains an [APIs.json](apis.yml) profile cataloging the Tryton API for the API Evangelist network.
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.tryton.org/)
+- [Documentation](https://docs.tryton.org/latest/)
+- [Pricing](https://www.tryton.org/)
+- [Blog](https://discuss.tryton.org/c/news/25)
+
+## API Evangelist rating
+
+**Kin Score 17.5** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 66.1 |
+| Contract quality | 24.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 5.3 |
+| Developer ergonomics | 11.9 |
+| Access clarity | 15.8 |
+
+**Agent readiness 13.6** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 5.9** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/tryton/](https://apis.io/providers/tryton/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Tryton: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/tryton/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
